@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Using Placeholders">
+<meta name="keywords"
+	content="ckeditor, editor, wysiwyg, placeholder, widget, template, configure, configuration, setup, settings, options, customization, customize, customise, customisation, config, modification, modify, change">
+<meta name="sdk-samples" content="Using placeholders">
+<title>CKEditor SDK » Samples » Placeholders</title>
+<link href="../theme/css/fonts.css" rel="stylesheet">
+<link href="../theme/css/sdk.css" rel="stylesheet">
+<script src="ckeditor.js"></script>
+<script src="assets/picoModal-2.0.1.min.js"></script>
+<script src="assets/sample.js"></script>
+<script src="assets/contentloaded.js"></script>
+<script src="assets/simplesample.js"></script>
+<script src="assets/beautify-html.js"></script>
+<link rel="icon" href="../theme/img/favicon.ico">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+	<header class="sdk-header">
+		<h1 class="sdk-logo">
+			<a href="index.html">Home</a>
+		</h1>
+
+	</header>
+	<section class="sdk-contents">
+		<h1>Using D2W Placeholders</h1>
+
+		<p>Each annotated @Tow path will be a candidate of placeholder and
+			allows to be manupliated in the template.</p>
+		<textarea cols="10" id="editor1" name="editor1" rows="10"
+			data-sample="1" data-sample-short="">
+				&lt;p&gt;Dear&amp;nbsp;[[Customer Name]],&lt;/p&gt;
+
+				&lt;p&gt;thank you for contacting us.&amp;nbsp;Your case was logged as&amp;nbsp;[[Case ID]]&amp;nbsp;and is assigned to&amp;nbsp;[[Technician Name]]. We will attempt to resolve your issue within the next&amp;nbsp;[[Time]]&amp;nbsp;hours.&lt;/p&gt;
+
+				&lt;p&gt;Should you need any further assistance, do not hesitate to contact our Customer Support Hotline at [[Hotline Number]].&lt;/p&gt;
+
+				&lt;p&gt;Yours sincerely,&lt;br /&gt;
+				[[Name]]&lt;br /&gt;
+				Customer Support Team&lt;/p&gt;
+			</textarea>
+
+		<script data-sample="1">
+				CKEDITOR.replace( 'editor1', {
+					extraPlugins: 'd2w',
+					height: 220
+				} );
+			</script>
+
+	</section>
+</body>
+</html>
